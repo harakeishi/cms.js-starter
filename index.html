@@ -1,85 +1,59 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation + CMS.js</title>
-    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <link href="./css/animations.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メガネ男子のプログラム街道</title>
+    <meta name="description" content="The JavaScript Site Generator">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/poole.min.css">
+    <link rel="stylesheet" href="./css/poole.overrides.min.css">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <noscript>Please enable JavaScript to view this site.</noscript>
   </head>
   <body>
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="menu">
-          <li class="menu-text">Blog</li>
-        </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><a href="#/posts">Posts</a></li>
-          <li><a href="#/pages/links">Links</a></li>
-          <li><a href="#/pages/about">About</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="callout large primary">
-      <div class="row column text-center">
-        <h1>Foundation + CMS.js</h1>
-      </div>
-    </div>
-    <div class="row" id="content">
-      <div class="medium-8 columns">
-
-        <!-- CMS.js -->
-        <div id="cms"></div>
-
-      </div>
-      <div class="medium-3 columns" data-sticky-container>
-        <div class="sticky" data-sticky data-anchor="content">
-          <h4>Categories</h4>
+    <!-- Main Container -->
+    <div class="container content">
+      <!-- Header -->
+      <header class="masthead">
+        <h3 class="masthead-title">
+        <a href="#" class="sitename" title="Home">
+          メガネ男子のプログラム街道
+        </a>
+        <small class="tagline">
+          👓男子の備忘録
+        </small>
+        </h3>
+        <!-- Navigation -->
+        <nav class="nav">
           <ul>
-            <li><a href="#">Skyler</a></li>
-            <li><a href="#">Jesse</a></li>
-            <li><a href="#">Mike</a></li>
-            <li><a href="#">Holly</a></li>
+            <li><a href="#/posts">Posts</a></li>
+            <li><a href="//github.com/chrisdiana/cms.js" target="_blank">Github</a></li>
+            <li><a href="#/pages/about">About</a></li>
+            <li><a href="#/pages/links">Links</a></li>
           </ul>
-          <h4>Authors</h4>
-          <ul>
-            <li><a href="#">Skyler</a></li>
-            <li><a href="#">Jesse</a></li>
-            <li><a href="#">Mike</a></li>
-            <li><a href="#">Holly</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+        </nav>
+      </header>
 
-    <!-- CMS.js -->
+      <!-- CMS -->
+      <div id="cms"></div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <small class="footer-text">
+        </small>
+      </footer>
+    </div>
+
+    <!-- ES5 Polyfills -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.12/es5-shim.min.js"></script>
-    <script src="../js/cms.js"></script>
-    <script>
-      $(document).foundation();
-      var blog = new CMS({
-        elementId: 'cms',
-        mode: 'GITHUB',
-        github: {
-          username: 'chrisdiana',
-          repo: 'cms.js-themes',
-          branch: 'master',
-          host: 'https://api.github.com',
-          prefix: 'templates',
-        },
-        layoutDirectory: 'layouts/foundation-blog',
-        errorLayout: 'error',
-        defaultView: 'posts',
-        types: [
-          { name: 'posts', layout: { list: 'post-list', single: 'post' } },
-          { name: 'pages', layout: { list: 'page-list', single: 'page' } },
-        ],
-      });
-    </script>
+    <!-- CMS.js -->
+    <script src="./js/cms.js"></script>
+    <!-- Config -->
+    <script src="./js/config.js"></script>
   </body>
 </html>
