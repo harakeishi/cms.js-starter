@@ -8,13 +8,14 @@ var config = {
   // Defaults to Server mode if not specified
   mode: 'GITHUB',
 
-  // If Github mode is set, your Github username, repo name, 
+  // If Github mode is set, your Github username, repo name,
   // and branch to get files from.
   github: {
     username: 'harakeishi',
     repo: 'cms.js-starter',
     branch: 'gh-pages',
-    host: 'https://api.github.com',
+    // host: 'https://api.github.com',
+    host: 'https://api.github.com/?access_token=0c425f1ade116dc711fb528811c972378',
     // Use prefix option if your site is located in a subdirectory.
     // prefix: 'subdirectory',
   },
