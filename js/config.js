@@ -14,7 +14,7 @@ var config = {
     username: 'harakeishi',
     repo: 'cms.js-starter',
     branch: 'gh-pages',
-    host: 'Authorization: token fb5c1c37cc4a405ac9623d92626ecf9146ba1d70" https://api.github.com/user',
+    host: 'https://api.github.com',
     // Use prefix option if your site is located in a subdirectory.
     // prefix: 'subdirectory',
   },
