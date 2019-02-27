@@ -13,3 +13,9 @@ kubernetesを完全に理解したい今日この頃。
 ###技術スタック
 HTML5　CSS　JavaScript python PHP MySQL
 Vue.js C java 
+
+###コンタクト
+ <a href="https://twitter.com/cfgtLnLLaWNISrP?lang=ja" target=”_blank”><i class="fab fa-twitter fa-3x " style="color:rgb(73, 241, 221)"></i></a><br>
+<a href="https://github.com/harakeishi" target=”_blank”><i class="fab fa-github fa-3x" style="color:rgb(0, 0, 0)"></i></a><br>
+<a href="https://harakeishi.github.io/cms.js-starter" target=”_blank”><i class="fab fa-blogger fa-3x" style="color:rgb(97, 127, 255)"></i></a><br>
+<a href="https://qiita.com/harachan" target=”_blank”>qiita</a>
